@@ -1,0 +1,78 @@
+/* 
+introduction to CSS
+Box Model
+Login
+profile card
+more....
+ */
+
+ /* class name always starts with a dot */
+
+ /* typography */
+ .title{
+    text-align: center;
+    font-size: 50px;
+    color: blueviolet;
+    text-decoration: underline;
+    /* word-spacing: 30px; */
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+ }
+
+/* box model
+    border => thickness, style (dotted, dashed, groove), color
+    padding
+    margin
+*/
+.card{
+    text-align: center;
+    border: 1px solid lightgray;
+    width: 400px;
+    padding: 10px;
+    margin:20px auto;
+    border-radius: 16px;
+
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.card-img{
+    width: 100%;
+    border-radius: 16px;
+}
+.user-img{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}
+.btn{
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 14px 32px;
+    border-radius: 30px;
+    font-size: 16px;
+    width: 100%;
+}
+
+.login-card{
+    /* border: 3px solid red; */
+    
+    width: 400px;
+    margin: 80px auto;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.input{
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 12px;
+    padding: 16px;
+    border-radius: 12px;
+    border: 1px solid lightgray;
+    font-size: 17px;
+}
+.login-btn{
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 16px 36px;
+    font-size: 16px;
+    border-radius: 12px;
+}
