@@ -1,0 +1,150 @@
+body{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* positions
+static
+fixed
+sticky
+relative
+absolute
+*/
+
+.help-btn{
+    background-color: rgb(0, 0, 0);
+    color: white;
+    border: none;
+    padding: 16px 36px;
+    border-radius: 40px;
+    font-size: 16px;
+    position: fixed;
+    bottom: 0;
+    right:0;
+    margin: 60px;
+}
+
+.card{
+    border: 1px solid lightgray;
+    margin: 20px auto;
+    width: 400px;
+    border-radius: 14px;
+    padding: 10px;
+}
+.promotion-card{
+    background-color: #fff;
+    border: 1px solid lightgray;
+    margin: 20px auto;
+    width: 400px;
+    border-radius: 14px;
+    padding: 10px;
+    position: sticky;
+    bottom:0;
+}
+.promotion-card h3{
+    margin: 0;
+}
+.promotion-card p{
+    margin: 0;
+    margin-top: 6px;
+    font-size: 14px;
+}
+.card-img{
+    width: 100%;
+    border-radius: 14px ;
+    /* border-top-left-radius: 14px;
+    border-top-right-radius: 14px; */
+}
+.card-body{
+    padding: 10px;
+}
+.relative{
+    width: 600px;
+    height: 300px;
+    margin: 80px auto;
+    background-color: blueviolet;
+    border-radius: 20px;
+    padding: 30px;
+    position: relative;
+}
+.absolute{
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    border-radius: 10px;
+    /* bottom: 0; */
+    right: 0;
+    position: absolute;
+}
+.card-header{
+    position: relative;
+}
+.tag{
+    background-color: #fff;
+    padding: 3px 14px;
+    border-radius: 20px;
+    font-size: 14px;
+    position: absolute;
+    top: 0;
+    margin: 10px
+}
+.tag2{
+    background-color: #fff;
+    padding: 3px 14px;
+    border-radius: 20px;
+    font-size: 14px;
+    position: absolute;
+    right: 0;
+    top:0;
+    margin: 10px
+}
+
+
+.hero{
+    background-image: url('https://source.unsplash.com/1600x900/?india');
+    width: 700px;
+    margin: 40px auto;
+    border-radius: 20px;
+    height: 400px;
+    background-size: cover;
+}
+.btn{
+    background-color: rgb(255, 255, 255);
+    color: black;
+    border: none;
+    padding: 16px 36px;
+    border-radius: 40px;
+    font-size: 16px;
+}
+.hero-content{
+    color: white;
+    padding: 80px 50px;
+    text-align: center;
+}
+
+.blog{
+    width: 660px;
+    margin: 40px auto;
+
+}
+.blog-img{
+    width: 100%;
+}
+
+.ad{
+    background-color: rgb(255, 194, 183);
+    border-radius: 10px;
+    position: sticky;
+    top:0;
+    padding: 6px 0;
+    text-align: center;
+    margin:10px 0;
+}
+.ad h3{
+    margin: 0;
+}
+.ad p{
+    margin-top: 6px;
+}
+.blog-img-header{
+    position: relative;
+}
