@@ -1,0 +1,100 @@
+body{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.card{
+    border: 1px solid lightgray;
+    padding: 10px;
+    width: 270px;
+    border-radius: 14px;
+}
+.flexbox{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap:20px;
+}
+.card-img{
+    width: 100%;
+    border-radius: 14px;
+}
+.card-flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.item-flex{
+    width: 1000px;
+    margin: 30px auto;
+    display: flex;
+    justify-content: space-between;
+}
+.food-item{
+text-align: center;
+}
+.food-item img{
+    height: 160px;
+    width: 160px;
+    border-radius: 50%;
+}
+.header{
+    width: 1000px;
+    margin: 10px auto;
+}
+.container{
+    width: 1000px;
+    margin: 50px auto;
+}
+.food-card{
+    width: 320px;
+    padding: 10px;
+    border-radius: 16px;
+    border: 1px solid white;
+}
+.food-card-img{
+    height: 240px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 16px;
+}
+.food-card-flex{
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+}
+.sub-heading{
+    margin-top: 8px;
+    font-weight: 500;
+    margin-bottom: 0;
+}
+.small{
+    margin-top: 6px;
+    font-size: 13px;
+    color: gray;
+}
+.ratings{
+    background-color: green;
+    color: white;
+    font-size: 12px;
+    display: inline;
+    padding: 3px 6px;
+    border-radius: 6px;
+}
+.safety{
+    border-top:1px solid lightgray;
+    display: flex;
+    align-items: center;
+    gap:10px
+
+}
+.safety img{
+    height: 20px;
+}
+.food-card:hover{
+    border: 1px solid lightgray;
+}
+.food-contianer{
+    display: flex;
+    justify-content: center;
+    gap:12px;
+}
