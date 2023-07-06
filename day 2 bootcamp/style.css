@@ -1,0 +1,140 @@
+/* positions
+static => default
+fixed => 
+sticky
+relative
+absolute
+*/
+body{
+    margin: 0;
+}
+
+.card{
+    position:static;
+    width: 270px;
+    border: 1px solid lightgray;
+    border-radius: 14px;
+    margin: 30px auto;
+    padding: 10px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.card-img{
+    width: 100%;
+    border-radius: 14px;
+}
+.help-btn{
+    background-color: black;
+    color: white;
+    font-size: 16px;
+    padding: 15px 30px;
+    border-radius: 40px;
+    border: none;
+    position: fixed;
+    bottom:0;
+    right:0;
+    margin: 40px
+}
+.nav{
+    height: 80px;
+    width: 100vw;
+    background-color:red;
+    position: sticky;
+    top:0
+}
+
+
+.relative{
+    height: 260px;
+    width: 700px;
+    background-color: rgb(255, 38, 0);
+    border-radius: 16px;
+    margin: 50px auto;
+    padding: 30px;
+    position: relative;
+}
+
+.absolute{
+    height: 80px;
+    width: 80px;
+    background-color: #fff;
+    position: absolute;
+    top:40%;
+    left: 45%;
+    transform: translate(-50% ,-50%);
+
+}
+
+.hero{
+    width: 700px;
+    height: 300px;
+    border-radius: 20px;
+    margin: 50px auto;
+    position: relative;
+}
+.hero img{
+    width: 100%;
+    border-radius: 20px;
+}
+.hero-content{
+    width: 100%;
+    padding: 20px;
+    position: absolute;
+    bottom: 0;
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.btn-white{
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    padding: 15px 30px;
+    border-radius: 40px;
+    border: none;
+}
+.card-header{
+    position: relative;
+   
+}
+.must-try{
+    background-color: rgb(222, 255, 222);
+    font-size: 13px;
+    color: rgb(0, 70, 0);
+    padding:3px 12px;
+    position: absolute;
+    bottom: 0;
+    border-radius: 20px;
+    margin:10px;
+}
+.ratings{
+    background-color: rgb(255, 254, 222);
+    font-size: 13px;
+    color: rgb(70, 54, 0);
+    padding:3px 12px;
+    position: absolute;
+    top: 35%;
+    left: 25%;
+    transform: translate(-25% -25%);
+    border-radius: 20px;
+    /* margin:10px; */
+}
+.user{
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin-bottom: -33px;
+    margin-left: 10px;
+    border: 2px solid white;
+}
+.card-title{
+    margin-top: 40px;
+}
+
+.header{
+    width: 100vw;
+    height: 50vh;
+    background-color: red;
+    /* height: 80px; */
+}
