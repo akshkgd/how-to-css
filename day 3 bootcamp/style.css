@@ -1,0 +1,128 @@
+body{
+    margin: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.card1{
+    width: 240px;
+    height: 300px;
+    border-radius: 14px;
+    background-color: blueviolet;
+}
+
+.card2{
+    width: 240px;
+    height: 200px;
+    border-radius: 14px;
+    background-color: orangered;
+}
+/* justify content: horizontal alignment
+align-items: vertical aligments
+*/
+.flexbox{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    /* width:700px; */
+    /* height: 500px; */
+    /* background-color: rgb(255, 180, 167); */
+    border-radius: 20px;
+    margin: 80px auto;
+    align-items: baseline;
+    flex-wrap: wrap;
+}
+
+/* food website */
+.food-card{
+    width: 260px;
+    border-radius: 12px;
+    padding: 10px;
+    border: 1px solid lightgray;
+}
+.food-card-img{
+    width: 100%;
+    border-radius: 12px;
+}
+.container{
+    margin-top: 30px;
+    display: flex;
+    gap:20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.food-card p{
+    font-size: 14px;
+    margin-top: 6px;
+}
+.flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ratings{
+    position: absolute;
+    bottom: 0;
+    color: rgb(114, 74, 0);
+    background-color: rgb(255, 249, 231);
+    padding: 3px 12px;
+    border-radius: 20px;
+    font-size: 14px;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    gap:4px
+}
+.card-header{
+    position: relative;
+}
+
+.nav{
+    /* background-color: red; */
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    position: sticky;
+    top:0;
+    padding: 16px 0;
+    width: 90vw;
+    margin: 0 auto;
+    align-items: center;
+}
+.links{
+    display: flex;
+    gap:12px;
+    align-items: center;
+}
+.link{
+    text-decoration: none;
+    color: black;
+}
+.logo img{
+    height: 50px;
+}
+
+.btn{
+    background-color: black;
+    padding: 14px 28px;
+    border-radius: 12px;
+    border:none;
+    color: white;
+}
+
+.search{
+    display: flex;
+    align-items: center;
+}
+
+.search-input{
+    border:1px solid lightgray;
+    padding: 16px;
+    border-radius: 12px;
+    width: 400px;
+}
+.search-btn{
+    background-color: white;
+    border:none;
+    margin-left: -38px;
+}
