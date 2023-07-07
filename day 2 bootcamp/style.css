@@ -111,9 +111,9 @@ body{
     color: rgb(70, 54, 0);
     padding:3px 12px;
     position: absolute;
-    top: 35%;
-    left: 25%;
-    transform: translate(-25% -25%);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     border-radius: 20px;
     /* margin:10px; */
 }
@@ -137,4 +137,19 @@ body{
     height: 50vh;
     background-color: red;
     /* height: 80px; */
+    position: relative;
 }
+
+
+
+.test{
+    position: absolute;
+    height: 80px;
+    border-radius: 50%;
+    width: 80px;
+    background-color: #fff;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
