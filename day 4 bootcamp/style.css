@@ -1,0 +1,112 @@
+/* media query => responsive design */
+body{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+/* big screen */
+@media(min-width: 990px){
+    .profile{
+        width: 560px;
+        margin: 50px auto;
+        display: flex;
+        gap:12px;
+    }
+    .user{
+        width: 170px;
+        height: 170px;
+        border-radius: 12px;
+    }
+    .btn{
+        background-color: black;
+        border:none;
+        padding: 14px 28px;
+        border-radius: 12px;
+        color: white;
+        font-size: 16px;
+    }
+}
+/* small screen */
+@media(max-width: 586px){
+    .profile{
+        
+        margin: 10px;
+        text-align: center;
+    }
+    .user{
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+    }
+    .btn{
+        background-color: black;
+        border:none;
+        padding: 14px 28px;
+        border-radius: 40px;
+        color: white;
+        font-size: 16px;
+    }
+}
+
+@media(min-width: 586px)and (max-width: 990px){
+    .profile{
+        
+    }
+}
+
+/* breakpoints
+    small => 586px
+    medium => 786px
+    large => 990px
+    xlg => 1200px and above
+
+*/
+
+
+
+/* animations */
+
+
+
+.card{
+    transition: .3s;
+    width: 320px;
+    border: 1px solid lightgray;
+    border-radius: 14px;
+    padding: 10px;
+    margin: 50px auto;
+}
+.card img{
+    width: 100%;
+    border-radius: 14px;
+}
+.card:hover{
+    width: 350px;
+    border-radius: 20px;
+    border: 1px solid white;
+    box-shadow: 4px 6px 16px 8px #eee;
+    transform: rotate(3deg);
+}
+
+
+.msd{
+    height: 100px;
+    width: 100px;
+    /* background-color: orangered; */
+    animation-name: dhoni;
+    animation-duration: 1s;
+    /* animation-fill-mode: forwards; */
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+} 
+@keyframes dhoni{
+    from{}
+    to{
+        /* transform: rotate(360deg); */
+        margin-left: 600px;
+        border-radius: 50%;
+        height: 50px;
+        width: 50px;
+        /* background-color: blueviolet; */
+    }
+}
