@@ -1,0 +1,118 @@
+body{
+    margin:0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.feed{
+    width: 500px;
+    margin: 16px 0;
+    padding: 10px;
+    border: 1px solid lightgray;
+    border-radius: 16px;
+}
+.feed-img{
+    margin-top: 14px;
+    width: 100%;
+    border-radius: 16px;
+}
+.reactions{
+    display: flex;
+    justify-content: space-between;
+}
+.reactions a{
+    color: black;
+}
+.user-container{
+    display: flex;
+    gap:8px;
+    align-items: center;
+}
+.user{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+}
+.name{
+    font-weight: 500;
+    font-size: 15px;
+    margin: 0;
+}
+.username{
+    margin: 0;
+    font-size: 13px;
+    color: gray;
+}
+.container{
+    width: 72vw;
+    display: flex;
+    margin: 50px auto;
+
+}
+.feed-container{
+    width: 60%;
+}
+
+.sidebar-container{
+    width: 40%;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 72vw;
+    margin: 20px auto;
+    height: 80px;
+}
+.app{
+    display: flex;
+    gap:8px
+}
+.app img{
+    height: 40px;
+}
+.story{
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    border:2px solid white;
+    transition: .2s;
+}
+.story:hover{
+    
+    border: 2px solid tomato;
+}
+.story-container{
+    width: 72vw;
+    margin: 8px auto;
+    display: flex;
+    gap:8px;
+    overflow-x: scroll;
+}
+.logo img{
+    height: 60px;
+}
+.links{
+    display: flex;
+    gap:10px;
+    align-items: center;
+
+}
+ .link{
+    color: black;
+    text-decoration: none;
+}
+.add-post{
+    background-color: #fff;
+    border: 1px solid lightgray;
+    padding: 14px 24px;
+    border-radius: 12px;
+    cursor: pointer;
+}
+.download-app{
+    background-color: #000000;
+    border: 1px solid rgb(0, 0, 0);
+    padding: 14px 24px;
+    border-radius: 12px;
+    cursor: pointer;
+    color: white;
+}
