@@ -1,104 +1,125 @@
-/* day 1 => intro box model
-day 2 => positions and usecases
-day 3 => flexbox => food ordering website 
-day 4 => media queries and animations
-day 5 => major project => social media website
+/* 
+css is for designing....???
+
+day 1 => basics, box model
+day 2 => css positions
+day 3 => css flexbox layouts food ordering webpage
+day 4 => css media queries and animations
+day 5 => social media website
 */
 
+/* when we are selecting an html tag to apply c ss
+its know as selector */
 
-/* class name always starts with a dot */
+h1{
+    
+}
+/* class name it always starts with a dot
+so that it resembles the class name
+*/
 .title{
-    color: blueviolet;
-    text-decoration:underline;
-    font-size: 38px;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: red;
 }
 .text-center{
     text-align: center;
 }
 
-
 /* box model
-border => thickness, style(solid, dotted, dashed), color
-padding
-margin
+  border => thickness, style(solid, dotted, dashed), color
+  padding => 
+  margin
 */
 
 .box{
     border: 1px solid lightgray;
-    width: 300px;
+    width: 320px;
     padding: 10px;
-    margin: 10px;
-    border-radius: 14px;
+    margin: 10px auto;
+    border-radius: 16px;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 .box-img{
     width: 100%;
-    border-radius: 14px;
+    border-radius: 16px;
 }
-
 
 .card{
     border: 1px solid lightgray;
+    margin: 50px auto;
     border-radius: 14px;
-    width: 270px;
-    padding: 10px;
-    margin:50px auto;
+    width: 280px;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 .card-img{
     width: 100%;
-    border-radius: 14px;
+    border-top-left-radius: 14px;
+    border-top-right-radius: 14px;
 }
-.btn{
-    background-color: rgb(0, 0, 0);
-    color: white;
-    border: none;
-    font-size: 16px;
-    padding: 14px 30px;
-    border-radius: 40px;
-    
+.card-body{
+    padding: 10px;
+}
+
+.profile{
+    text-align: center;
+    width: 320px;
+    margin: 40px auto;
+    border: 1px solid lightgray;
+    border-radius: 14px;
+    padding: 10px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 .user{
     height: 100px;
     width: 100px;
     border-radius: 50%;
 }
-
-
-
-.bg-card{
-    width: 500px;
-    padding: 80px 30px;
-    background-color: blueviolet;
-    margin: 60px auto;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+.btn{
+    background-color: rgb(0, 0, 0);
+    border: none;
     color: white;
-    border-radius: 16px;
+    padding: 14px 30px;
+    font-size: 16px;
+    border-radius: 40px;
 }
-.btn-white{
+
+.bg{
+    background-color: blueviolet;
+    color: white;
+    width: 700px;
+    padding: 100px 60px;
+    margin: 50px auto;
+    border-radius: 20px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.btn-light{
     background-color: #fff;
     color: blueviolet;
-    padding: 14px 30px;
-    border-radius: 40px;
-    font-size: 16px;
     border: none;
+    padding: 14px 26px;
+    border-radius: 40px;
+
 }
 
-.login-container{
-    
+.login{
     width: 400px;
-    margin: 50px auto;
+    border: 1px solid lightgray;
+    border-radius: 16px;
+    padding: 10px;
+    margin: 90px auto;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
-
 .input{
- width: 100%;
- margin-bottom: 12px; 
- padding: 16px;  
- font-size: 16px;
- border: 1px solid lightgray;
- box-sizing: border-box;
- border-radius: 12px;
+    border: 1px solid lightgray;
+    border-radius: 12px;
+    font-size: 17px;
+    width: 100%;
+    margin-bottom: 12px;
+    padding: 16px;
+    /*  */
+    box-sizing: border-box;
+}
+.small{
+    font-size: 14px;
+    color: gray;
 }
