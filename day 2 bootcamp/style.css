@@ -1,0 +1,146 @@
+/* positions
+static is default position
+fixed => to fix the element in a specific position
+sticky => the element will stick in the defined position
+relative
+absolute
+*/
+
+body{
+    margin: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+nav{
+    height: 80px;
+    background-color: blueviolet;
+    width: 100%;
+    position: sticky;
+    bottom:0;
+}
+.card{
+    width:280px;
+    border: 1px solid lightgray;
+    border-radius: 14px;
+    padding: 10px;
+    margin: 10px auto;
+    /* position: static; */
+}
+.card-img{
+    width: 100%;
+    border-radius: 14px;
+}
+
+.help-btn{
+    background-color: black;
+    color: white;
+    padding: 14px 26px;
+    border-radius: 40px;
+    border: none;
+    font-size: 16px;
+    position: fixed;
+    bottom:50px;
+    right: 50px;
+}
+/* top, bottom, left, right: is distance from that position */
+
+
+.relative{
+    background-color: orangered;
+    width: 700px;
+    height: 400px;
+    margin: 50px auto;
+    position: relative;
+}
+.abs{
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    background-color: blueviolet;
+}
+.card-header{
+    position: relative;
+}
+.best-seller{
+    position: absolute;
+    top: 0;
+    margin:10px;
+    background-color: rgb(255, 231, 185);
+    color: rgb(75, 46, 0);
+    padding: 2px 12px;
+    border-radius: 20px;
+    font-size: 14px;
+}
+.ratings{
+    position: absolute;
+    bottom: 0;
+    margin:10px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(75, 46, 0);
+    padding: 2px 12px;
+    border-radius: 20px;
+    font-size: 14px;
+}
+
+.must-try{
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin:10px;
+    background-color: rgb(210, 255, 208);
+    color: rgb(7, 53, 0);
+    padding: 2px 12px;
+    border-radius: 20px;
+    font-size: 14px;
+}
+.hero{
+    width: 700px;
+    margin: 60px auto;
+    padding: 10px;
+    position: relative;
+}
+.hero-img{
+    width: 100%;
+    border-radius: 14px;
+}
+.hero-content{
+    width: 500px;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    position: absolute;
+    bottom: 80px;
+    /* margin: 40px; */
+    text-align: center;
+}
+.btn{
+    background-color: #fff;
+    padding: 15px 30px;
+    border: none;
+    font-size: 16px;
+    border-radius: 40px;
+    
+}
+
+.profile{
+    width: 600px;
+    margin: 60px auto;
+    position: relative;
+    
+}
+.bg-img{
+    width: 100%;
+}
+.user{
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin-bottom: -40px;
+    margin-left: 30px;
+    border: 2px solid white;
+}
