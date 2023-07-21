@@ -1,0 +1,153 @@
+body{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.card{
+    width: 260px;
+    height: 290px;
+    border: 1px solid lightgray;
+    padding: 10px;
+    border-radius: 14px;
+}
+.card-img{
+    width: 100%;
+    border-radius: 14px;
+}
+.flexbox{
+    display: flex;
+    justify-content: center;
+    gap:20px;
+
+}
+
+.feed{
+    margin: 50px auto;
+    width: 500px;
+    border-radius: 14px;
+    padding: 10px;
+    border: 1px solid lightgray;
+}
+.feed-img{
+    width: 100%;
+    border-radius: 14px;
+}
+.user-img{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+.user{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 24px;
+}
+.name{
+    margin: 0;
+    font-size: 15px;
+}
+.user-name{
+    margin: 0;
+    font-size: 14px;
+    color: gray;
+}
+.icons{
+    display: flex;
+    justify-content: space-between;
+}
+.food-card{
+    width: 270px;
+    padding: 10px;
+    border: 1px solid lightgray;
+    border-radius: 14px;
+    
+}
+.food-card-img{
+    width: 100%;
+    border-radius: 14px;
+}
+.container{
+    display: flex;
+    gap:20px;
+    justify-content: center;
+    flex-wrap: wrap;
+    /* width: 90px; */
+    margin: 20px auto;
+}
+.card-header{
+    position: relative;
+    width: 100%;
+}
+.must-try{
+    position: absolute;
+    padding: 2px 12px;
+    font-size: 13px;
+    border-radius: 20px;
+    background-color: rgb(220, 255, 220);
+    color: rgb(0, 51, 0);
+    top:0;
+    margin: 10px;
+}
+.ratings{
+    position: absolute;
+    padding: 2px 12px;
+    font-size: 13px;
+    border-radius: 20px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    bottom:0;
+    margin: 10px;
+}
+.best-seller{
+    position: absolute;
+    padding: 2px 12px;
+    font-size: 13px;
+    border-radius: 20px;
+    background-color: rgb(255, 238, 208);
+    color: rgb(69, 48, 0);
+    bottom:0;
+    right: 0;
+    margin: 10px;
+}
+.nav{
+    width: 1200px;
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 0;
+    align-items: center;
+}
+.links{
+    display: flex;
+    gap: 10px;
+    
+
+}
+.logo{
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: bolder;
+    color: black;
+}
+.link{
+    text-decoration: none;
+    color: black;
+}
+.search{
+    border: 1px solid lightgray;
+    border-radius: 60px;
+    padding: 0 12px;
+    display: flex;
+    align-items: center;
+}
+.input{
+    width: 350px;
+    padding: 16px;
+    border: none;
+    font-size: 16px;
+}
+.search-btn{
+    border: none;
+    background-color:white;
+
+}
