@@ -1,0 +1,98 @@
+/* media queries is where we can write a condition that which css will be applied 
+on what screen size */
+
+body{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+@media(min-width: 586px){
+    .profile{
+        width: 560px;
+        margin: 40px auto;
+        display: flex;
+        gap:20px
+    }
+    .user-img{
+        width: 200px;
+        height: 200px;
+        border-radius: 16px;
+    }
+    .btn{
+        background-color: black;
+        color: white;
+        font-size: 16px;
+        border: none;
+        border-radius: 10px;
+        padding: 14px 30px;
+    }
+}
+
+@media(max-width: 586px){
+    .profile{
+        text-align: center;
+        margin: 40px auto;
+    }
+    .user-img{
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+    }
+    .btn{
+        background-color: black;
+        color: white;
+        font-size: 16px;
+        border: none;
+        border-radius: 60px;
+        padding: 14px 30px;
+    }
+}
+/* 
+small 586px standard size
+*/
+
+/* animations */
+
+.card{
+    width: 270px;
+    padding: 10px;
+    border:1px solid lightgray;
+    border-radius: 14px;
+    margin: 50px auto;
+    transition: .3s;
+}
+.card-img{
+    width: 100%;
+    border-radius: 14px;
+}
+.card:hover{
+    transform: rotate(3deg);
+    width: 320px;
+    border-radius: 20px;
+    border: 1px solid white;
+    box-shadow: 6px 8px 16px 6px #eee;
+
+    /* transform: rotate(180deg); */
+}
+
+.demo{
+    width: 100px;
+    height: 100px;
+    background-color: orangered;
+    animation-name: msd;
+    animation-duration: 1s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    /* animation-fill-mode: forwards; */
+}
+
+@keyframes msd{
+    from{}
+    to{
+        margin-left: 600px;
+        transform: rotate(360deg);
+        border-radius: 50%; 
+        background-color: blueviolet;
+        height: 60px;
+        width: 60px;
+    }
+}
