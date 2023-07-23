@@ -1,0 +1,116 @@
+/* social media */
+body{
+    margin: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.container{
+    display: flex;
+    width: 990px;
+    margin: 30px auto;
+    gap:60px;
+}
+.feeds{
+    /* background-color: blueviolet; */
+    width: 560px;
+   
+}
+.sidebar{
+    width: 430px;
+    /* background-color: orangered; */
+    height: 500px;
+}
+.feed{
+    width: 560px;
+    border: 1px solid rgb(255, 255, 255);
+    box-shadow: 6px 8px 12px 8px #eee;
+    border-radius: 14px;
+    padding: 10px;
+    margin-bottom: 28px;
+}
+.feed-img{
+    width: 100%;
+    border-radius: 14px;
+}
+.icons{
+    display: flex;
+    justify-content: space-between;
+}
+.icon{
+    color: black;
+    transition: .3s;
+}
+.icon:hover{
+    color: rgb(30, 82, 255);
+}
+.user{
+    display: flex;
+    gap:8px;
+    margin-bottom: 20px;
+    align-items: center;
+}
+.user-img{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+}
+.name{
+    margin: 0
+}
+.user-name{
+    font-size: 14px;
+    color: gray;
+    margin: 0;
+}
+.download{
+    display: flex;
+    gap:14px;
+}
+.download img{
+    height: 44px;
+}
+.m-0{
+    margin: 0;
+}
+.story-container{
+    width: 990px;
+    margin: 30px auto;
+    display: flex;
+    gap:12px
+}
+.story-img{
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+}
+ /*.sticky{
+    position: sticky;
+    top:0;
+    background-color: #fff;
+} */
+.nav{
+    padding: 16px 0;
+    width: 990px;
+    margin: 10px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top:0;
+    background-color: #fff;
+}
+
+
+.logo img{
+    height: 52px;
+}
+.btn{
+    background-color: #fff;
+    border: 1px solid lightgray;
+    padding: 15px 30px;
+    font-size: 16px;
+    border-radius: 12px;
+    cursor: pointer;
+}
+.btn:hover{
+
+}
