@@ -1,0 +1,169 @@
+body{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+/* positions in css helps us to place html elements in specific position
+static
+fixed => FIX THE ELEMENT
+sticky
+relative
+absolute
+*/
+
+
+.card{
+    width: 270px;
+    border: 1px solid lightgray;
+    padding: 10px;
+    border-radius: 14px;
+    margin: 10px auto;
+    position: static;
+}
+.ad{
+    background-color: orangered;
+    color: white;
+    width: 270px;
+    border: 1px solid orangered;
+    padding: 10px;
+    border-radius: 14px;
+    margin: 10px auto;
+    position: sticky;
+    bottom: 0;
+}
+.small{
+    font-size: 13px;
+}
+.card-img{
+    width: 100%;
+    border-radius: 14px;
+}
+
+.help{
+    background-color: black;
+    color: white;
+    font-size: 16px;
+    padding: 14px 30px;
+    border: none;
+    border-radius: 40px;
+    position: fixed;
+    bottom: 60px;
+    right: 60PX;
+}
+
+/* top, left bottom and right are : distance from that direaction */
+/* fixed is always fixed and sticky is sticky only when it reached the postion defiuned */
+
+
+/* absolute */
+.red{
+    height: 300px;
+    width: 300px;
+    background-color: red;
+}
+.green{
+    height: 200px;
+    width: 200px;
+    background-color: green;
+    position: absolute;
+    bottom: 0;
+    right:0;
+}
+.blue{
+    height: 300px;
+    width: 300px;
+    background-color: blue;  
+}
+
+/* absolute is used to bring element on top and then move in the screen */
+
+/* relative is used to bound absolute
+relative is used to ensure that absolute refer parent as reference
+*/
+
+.parent{
+    background-color: blueviolet;
+    height: 400px;
+    width: 670px;
+    border-radius: 16px;
+    margin: 40px auto;
+    position: relative;
+}
+.child{
+    background-color: yellow;
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    right: 0;
+}
+.bg{
+    position: relative;
+    width: 700px;
+    margin: 30px auto;
+    border-radius: 16px;
+}
+.bg-img{
+    width: 100%;
+    border-radius: 16px;
+
+}
+.bg-content{
+    color: white;
+    position: absolute;
+    bottom:70px;
+    left: 40px;
+}
+.btn{
+    padding: 14px 26px;
+    border-radius: 40px;
+    border:none;
+    background-color: #fff;
+}
+.best-seller{
+    background-color: rgb(255, 237, 207);
+    color: rgb(113, 72, 0);
+    padding: 2px 12px;
+    border-radius: 20px;
+    font-size: 14px;
+    position: absolute;
+    bottom: 0;
+    margin: 10px;
+}
+.off{
+    background-color: rgb(207, 255, 208);
+    color: rgb(23, 113, 0);
+    padding: 2px 12px;
+    border-radius: 20px;
+    font-size: 14px;
+    position: absolute;
+    top: 0;
+    margin: 10px;
+}
+.card-header{
+    position: relative;
+}
+
+.profile{
+    width: 600px;
+    margin: 30px auto;
+
+}
+.profile-img{
+    width: 100%;
+}
+.profile-header{
+    position: relative;
+}
+.user{
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    bottom: 0;
+    left:30px;
+    border-radius: 50%;
+    border: 2px solid white;
+    margin-bottom: -30px;
+}
+.user-container{
+    /* text-align: center; */
+}
