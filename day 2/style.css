@@ -1,0 +1,168 @@
+/* positions
+    fixed
+    sticky
+    absolute
+    relative
+*/
+
+body{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+/* box model */
+
+.card{
+    width: 270px;
+    margin: 10px auto;
+    border: 1px solid lightgray;
+    padding: 10px;
+    border-radius: 14px;
+}
+.offer{
+    position: sticky;
+    top: 0;
+    width: 270px;
+    margin: 10px auto;
+    border: 1px solid orangered;
+    padding: 10px;
+    border-radius: 14px;
+    background-color: orangered;
+    color: white;
+}
+.title{
+    margin-bottom: 0;
+}
+.desc{
+    margin-top: 6px;
+    font-size: 14px;
+}
+.card-img{
+    width: 100%;
+    border-radius: 14px;
+}
+.help{
+    position: fixed;
+    bottom: 100px;
+    right: 50px;
+    background-color: black;
+    color: white;
+    padding: 14px 26px;
+    border: none;
+    font-size: 16px;
+    border-radius: 50px;
+}
+/* top, left, bottom, right
+it is the distance of element 
+from that direction
+
+*/
+
+
+
+.red{
+    height: 200px;
+    width: 200px;
+    background-color: red;
+}
+.green{
+    height: 150px;
+    width: 150px;
+    background-color:rgb(43, 255, 43);
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.blue{
+    height: 240px;
+    width: 240px;
+    background-color: royalblue;
+}
+
+/* absolute
+element moves one level top
+it moves with respect to screen size
+*/
+
+
+
+
+.parent{
+    position: relative;
+    width: 800px;
+    margin: 10px auto;
+    height: 500px;
+    background-color: blueviolet;
+}
+.child{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 100px;
+    width: 100px;
+    background-color: rgb(255, 0, 0);
+}
+
+.bg{
+    position: relative;
+    width: 700px;
+    margin: 10px auto;
+}
+.bg-img{
+    width: 100%;
+    border-radius: 16px;
+}
+.bg-content{
+    text-align: center;
+    position: absolute;
+    color: white;
+    bottom: 40px;
+    
+}
+.btn-white{
+    background-color: #fff;
+    border: none;
+    border-radius: 40px;
+    font-size: 16px;
+    padding: 14px 28px;
+}
+.card-header{
+    position: relative;
+}
+.best-seller{
+    position: absolute;
+    bottom: 0;
+    background-color: rgba(255, 241, 216, 0.892);
+    color: rgb(86, 54, 0);
+    padding: 3px 12px;
+    font-size: 14px;
+    border-radius: 12px;
+    margin: 10px;
+}
+.try{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(234, 255, 234, 0.864);
+    color: rgb(5, 95, 0);
+    padding: 3px 12px;
+    font-size: 14px;
+    border-radius: 12px;
+    margin: 10px;
+}
+.profile{
+    width: 600px;
+    margin: 10px auto;
+    position: relative;
+}
+.profile-bg{
+    width: 100%;
+    border-radius: 14px;
+}
+.user{
+    height: 80px;
+    width: 80px;
+    border-radius:50%;
+    position: absolute;
+    left: 40px;
+    bottom: -40px;
+    border: 2px solid white;
+}
