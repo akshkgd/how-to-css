@@ -1,0 +1,81 @@
+/* h1{} => selector */
+/* class name will always start with a dot */
+.abc{
+    color: red;
+}
+.center{
+    text-align: center;
+}
+
+/* div =>  1. to apply the css to all inner elements in one shot
+           2. to structure the code
+*/  
+
+
+
+/* box model
+    border => thickness, style, color
+    padding => space inside the border
+    margin => space outside the birder
+*/
+
+.box{
+    border: 1px solid lightgray;
+    width: 300px;
+    padding: 10px;
+    margin: 60px auto;
+    border-radius: 14px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.box-img{
+    width: 100%;
+    border-radius: 14px;
+}
+.bg{
+    background-color: orangered;
+    width: 670px;
+    margin: 70px auto;
+    color: white;
+    padding: 120px 40px;
+    border-radius: 32px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.btn{
+    background-color: #fff;
+    border: none;
+    padding: 16px 30px;
+    font-size: 16px;
+    border-radius: 80px;
+}
+
+.login{
+    text-align: center;
+    width: 340px;
+    margin: 120px auto;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.input{
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 12px;
+    box-sizing: border-box;
+    font-size: 16px;
+    border-radius: 0;
+    border: 1px solid gray;
+}
+.login-btn{
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 13px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* box-sizing: border-box ensures that the content does not go out of the parentn
+element if its going out because of padding */
+
+
+.logo{
+    height: 48px;
+}
