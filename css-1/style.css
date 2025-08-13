@@ -1,0 +1,73 @@
+/* 
+    1. your videos should be on
+    2. chat will be open to me
+    3. please do not write the code with me
+*/
+
+
+/* h1{} => selector */
+.abc{
+    color: red;
+}
+.center{
+    text-align: center;
+}
+
+/* div => to apply css to all inner elements in one shot.
+            div does not have any output of its own.
+*/
+/* box model
+    border => thickness, style, color
+    padding => space inside the border
+    margin => space outside the border
+*/
+
+/* class name always starts with a dot */
+.box{
+    border:1px solid lightgray;
+    width: 300px;
+    padding: 10px;
+    margin: 60px auto;
+    border-radius: 14px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+.box-img{
+    width: 100%;
+    border-radius: 14px;
+}
+
+
+/* either in padding or in margin when we apply two values the first value refers
+top and bottom and the second one refers left and right */
+
+.login{
+    text-align: center;
+    width: 340px;
+    margin: 160px auto;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.input{
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid gray;
+    box-sizing: border-box;
+}
+.btn{
+    width: 100%;
+    box-sizing: border-box;
+    background-color: black;
+    color: white;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid black;
+}
+/*  box-sizing: border-box ensures that the content does not go out of the parent
+element if its going because of padding */
+
+.logo{
+    height: 46px;
+}
