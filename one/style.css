@@ -1,53 +1,56 @@
 /* 
-    1. your videos should be on
-    2. chat will be open to me
-    3. please do not write the code with me
+    1. videos are always on
+    2. you will not be able to see others msg
+    3. do not write the code
+    4. rec will be available on the last day of the bootcamp
 */
 
 
 /* h1{} => selector */
-.abc{
+/* class name in css always starts with a dot */
+.heading{
     color: red;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 .center{
     text-align: center;
 }
 
-/* div => to apply css to all inner elements in one shot.
-            div does not have any output of its own.
-*/
+/* div=> to apply css to all inner elements */
 /* box model
     border => thickness, style, color
     padding => space inside the border
     margin => space outside the border
 */
 
-/* class name always starts with a dot */
+
+
 .box{
-    border:1px solid lightgray;
+    border: 1px solid lightgray;
     width: 300px;
     padding: 10px;
     margin: 60px auto;
     border-radius: 14px;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-
+   
 }
 .box-img{
     width: 100%;
     border-radius: 14px;
 }
 
+/* when u apply two values either in padding or in margin
+the first value refers top and bottom and 
+second values refers left and right */
 
-/* either in padding or in margin when we apply two values the first value refers
-top and bottom and the second one refers left and right */
+
 
 .login{
-    text-align: center;
-    width: 340px;
-    margin: 160px auto;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    width: 346px;
+    margin: 150px auto;
+    text-align: center;
 }
-
 .input{
     width: 100%;
     margin-bottom: 10px;
@@ -57,17 +60,18 @@ top and bottom and the second one refers left and right */
     box-sizing: border-box;
 }
 .btn{
+    border: 1px solid black;
+    padding: 12px;
+    font-size: 16px;
     width: 100%;
     box-sizing: border-box;
     background-color: black;
     color: white;
-    padding: 12px;
-    font-size: 16px;
-    border: 1px solid black;
 }
-/*  box-sizing: border-box ensures that the content does not go out of the parent
-element if its going because of padding */
+
+/* box-sizing: border-box ensures that the content does not go put of the parent
+element if its going out because of padding */
 
 .logo{
-    height: 46px;
+    height: 44px;
 }
