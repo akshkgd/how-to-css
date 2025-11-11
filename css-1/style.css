@@ -1,25 +1,24 @@
 /* 
-    1. videos are on
-    2. you will not be able to see others chat
-    3. please do not write the code 
-    4. 45 min. 
+    1.  make sure your video is on
+    2.  do not write the code with mwe
+    3. you will not be able to others chat
 */
 
-
 /* h1{} => selector */
-
-/* class names always starts with a dot */
+/* classes always starts with a dot */
 .abc{
     color: red;
 }
 .center{
     text-align: center;
 }
-/* div => to apply the css to all inner elements in one shot */
-/* box model
-    border => thickness, style, color
-    padding => space inside the border
-    margin => space outside the border
+
+
+/* div => div is used to apply the css to all inner elemwnts in one shot */
+/* box model 
+    1. border => thickness, style, color
+    2. padding => space inside the border
+    3. margin => space outside the border
 */
 
 
@@ -31,20 +30,18 @@
     border-radius: 14px;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
-
 .box-img{
     width: 100%;
     border-radius: 14px;
 }
-
-/* either in padding or in margin
-first value refers top and bottom and the second value refers left and right
+/* 
+    either in padding or in margin
+    the first value refers top and bottom
+    second value refers left and right
 */
 
 
-
 .login{
-
     text-align: center;
     width: 340px;
     margin: 160px auto;
@@ -52,24 +49,25 @@ first value refers top and bottom and the second value refers left and right
 }
 .input{
     width: 100%;
-    margin-bottom: 10px;
+    margin-bottom:10px ;
     padding: 12px;
+    font-size: 16px;
     border: 1px solid gray;
     border-radius: 0;
-    font-size: 16px;
     box-sizing: border-box;
 }
+
 .btn{
-    width: 100%;
-    box-sizing: border-box;
     background-color: black;
     color: white;
+    box-sizing: border-box;
+    width: 100%;
+    font-size: 16px;
     padding: 12px;
     border: 1px solid black;
-    font-size: 16px;
 }
+/* box-sizing: border-box is used to ensure that the content does not go out of the
+parent element if its going out because of padding. */
 .logo{
-    height: 52px;
+    height: 48px;
 }
-/* box-sizing: border-box ensures that the content does not go out of the parent 
-element if its going out because of padding. */
