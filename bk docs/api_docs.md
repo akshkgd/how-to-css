@@ -6,12 +6,168 @@ Production URL: `https://your-app.ondigitalocean.app`
 ---
 
 ## 📋 Table of Contents
+- [Public Auth API](#public-auth-api)
 - [Authentication](#authentication)
 - [Users API](#users-api)
 - [Courses API](#courses-api)
 - [Enrollments API](#enrollments-api)
 - [Response Format](#response-format)
 - [Error Codes](#error-codes)
+
+---
+
+## 🔓 Public Auth API
+
+These endpoints are publicly accessible and do not require authentication.
+
+Base path: `/api/auth`
+
+### 1. User Signup
+
+**Endpoint:** `POST /api/auth/signup`
+
+**Description:** Register a new user account. Creates user in both Supabase Auth and application database.
+
+**Request Body:**
+```json
+{
+  "name": "John Doe",
+  "email": "john@example.com",
+  "password": "securePassword123",
+  "mobile": "+1234567890"
+}
+```
+
+**Required Fields:**
+- `name` (string) - User's full name
+- `email` (string) - Valid email address
+- `password` (string) - Minimum 6 characters recommended
+
+**Optional Fields:**
+- `mobile` (string) - Phone number
+
+**Request:**
+```bash
+curl -X POST http://localhost:3000/api/auth/signup \
+  -H "Content-Type: application/json" \
+  -d '{
+    "name": "John Doe",
+    "email": "john@example.com",
+    "password": "securePassword123",
+    "mobile": "+1234567890"
+  }'
+```
+
+**Response:** `201 Created`
+```json
+{
+  "success": true,
+  "message": "User registered successfully",
+  "data": {
+    "user": {
+      "id": "550e8400-e29b-41d4-a716-446655440000",
+      "name": "John Doe",
+      "email": "john@example.com",
+      "mobile": "+1234567890",
+      "role": "student",
+      "status": "active",
+      "createdAt": "2024-11-28T10:00:00Z",
+      "updatedAt": "2024-11-28T10:00:00Z"
+    },
+    "session": {
+      "access_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...",
+      "refresh_token": "...",
+      "expires_in": 3600
+    }
+  }
+}
+```
+
+**Error Responses:**
+
+`400 Bad Request` - Missing required fields:
+```json
+{
+  "success": false,
+  "error": "Name, email, and password are required"
+}
+```
+
+`409 Conflict` - User already exists:
+```json
+{
+  "success": false,
+  "error": "User with this email already exists"
+}
+```
+
+---
+
+### 2. User Login
+
+**Endpoint:** `POST /api/auth/login`
+
+**Description:** Login with email and password. Returns JWT token for authenticated requests.
+
+**Request Body:**
+```json
+{
+  "email": "john@example.com",
+  "password": "securePassword123"
+}
+```
+
+**Request:**
+```bash
+curl -X POST http://localhost:3000/api/auth/login \
+  -H "Content-Type: application/json" \
+  -d '{
+    "email": "john@example.com",
+    "password": "securePassword123"
+  }'
+```
+
+**Response:** `200 OK`
+```json
+{
+  "success": true,
+  "message": "Login successful",
+  "data": {
+    "user": {
+      "id": "550e8400-e29b-41d4-a716-446655440000",
+      "name": "John Doe",
+      "email": "john@example.com",
+      "mobile": "+1234567890",
+      "role": "student",
+      "status": "active"
+    },
+    "session": {
+      "access_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...",
+      "refresh_token": "...",
+      "expires_in": 3600
+    },
+    "accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9..."
+  }
+}
+```
+
+**Error Responses:**
+
+`400 Bad Request` - Missing fields:
+```json
+{
+  "success": false,
+  "error": "Email and password are required"
+}
+```
+
+`401 Unauthorized` - Invalid credentials:
+```json
+{
+  "success": false,
+  "error": "Invalid email or password"
+}
+```
 
 ---
 
@@ -284,7 +440,71 @@ curl -X PUT http://localhost:3000/api/admin/users/550e8400-e29b-41d4-a716-446655
 
 ---
 
-### 4. Delete User
+### 4. Ban User
+
+**Endpoint:** `POST /api/admin/users/:id/ban`
+
+**Description:** Ban a user by setting their status to "banned". Banned users cannot access the platform.
+
+**Parameters:**
+- `id` (path, required) - User UUID
+
+**Request:**
+```bash
+curl -X POST http://localhost:3000/api/admin/users/550e8400-e29b-41d4-a716-446655440000/ban \
+  -H "Authorization: Bearer <your-jwt-token>"
+```
+
+**Response:** `200 OK`
+```json
+{
+  "success": true,
+  "message": "User banned successfully",
+  "data": {
+    "id": "550e8400-e29b-41d4-a716-446655440000",
+    "name": "John Doe",
+    "email": "john@example.com",
+    "status": "banned",
+    "updatedAt": "2024-11-28T12:00:00Z"
+  }
+}
+```
+
+---
+
+### 5. Activate User
+
+**Endpoint:** `POST /api/admin/users/:id/activate`
+
+**Description:** Activate a banned user by setting their status to "active".
+
+**Parameters:**
+- `id` (path, required) - User UUID
+
+**Request:**
+```bash
+curl -X POST http://localhost:3000/api/admin/users/550e8400-e29b-41d4-a716-446655440000/activate \
+  -H "Authorization: Bearer <your-jwt-token>"
+```
+
+**Response:** `200 OK`
+```json
+{
+  "success": true,
+  "message": "User activated successfully",
+  "data": {
+    "id": "550e8400-e29b-41d4-a716-446655440000",
+    "name": "John Doe",
+    "email": "john@example.com",
+    "status": "active",
+    "updatedAt": "2024-11-28T12:00:00Z"
+  }
+}
+```
+
+---
+
+### 6. Delete User
 
 **Endpoint:** `DELETE /api/admin/users/:id`
 
