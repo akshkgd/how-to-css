@@ -300,7 +300,71 @@ curl http://localhost:3000/api/admin/users \
 
 ---
 
-### 2. Get User by ID (with Enrollments)
+### 2. Search Users
+
+**Endpoint:** `GET /api/admin/users/search?q={searchTerm}`
+
+**Description:** Search for users by name, email, or mobile number. Case-insensitive partial matching.
+
+**Query Parameters:**
+- `q` (required) - Search term to match against name, email, or mobile
+
+**Request:**
+```bash
+# Search by name
+curl "http://localhost:3000/api/admin/users/search?q=john" \
+  -H "Authorization: Bearer <your-jwt-token>"
+
+# Search by email
+curl "http://localhost:3000/api/admin/users/search?q=john@example" \
+  -H "Authorization: Bearer <your-jwt-token>"
+
+# Search by mobile
+curl "http://localhost:3000/api/admin/users/search?q=1234567" \
+  -H "Authorization: Bearer <your-jwt-token>"
+```
+
+**Response:** `200 OK`
+```json
+{
+  "success": true,
+  "data": [
+    {
+      "id": "550e8400-e29b-41d4-a716-446655440000",
+      "name": "John Doe",
+      "email": "john@example.com",
+      "mobile": "+1234567890",
+      "avatar": "https://example.com/avatar.jpg",
+      "status": "active",
+      "role": "student",
+      "lastActivity": "2024-11-28T10:00:00Z",
+      "createdAt": "2024-11-01T10:00:00Z",
+      "updatedAt": "2024-11-28T10:00:00Z"
+    }
+  ],
+  "count": 1,
+  "searchTerm": "john"
+}
+```
+
+**Search Features:**
+- ✅ Case-insensitive search
+- ✅ Partial matching (finds "john" in "John Doe")
+- ✅ Searches across name, email, AND mobile fields
+- ✅ Returns all matching users
+- ✅ Empty array if no matches found
+
+**Error Response:** `400 Bad Request`
+```json
+{
+  "success": false,
+  "error": "Search query parameter \"q\" is required"
+}
+```
+
+---
+
+### 3. Get User by ID (with Enrollments)
 
 **Endpoint:** `GET /api/admin/users/:id`
 
