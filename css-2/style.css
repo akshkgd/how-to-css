@@ -1,0 +1,88 @@
+body{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+/* box model => border, padding and margins */
+
+.card{
+    width: 266px;
+    border: 1px solid lightgray;
+    border-radius: 26px;
+    padding: 10px;
+    margin: 10px auto;
+}
+.card-img{
+    width: 100%;
+    border-radius: 16px;
+}
+
+/* positions
+    1. fixed
+    2. sticky
+    3. absolute
+    4. relative
+*/
+
+.help-btn{
+    background-color: black;
+    color: white;
+    padding: 16px 30px;
+    border: none;
+    font-size: 16px;
+    border-radius: 80px;
+    position: fixed;
+    bottom: 60px;
+    right: 60px;
+}
+.banner{
+    background-color: #fff;
+    padding: 18px 10px;
+    position: sticky;
+    top: 0;
+}
+
+
+.bg{
+    width: 620px;
+    margin: 60px auto;
+    position: relative;
+}
+.bg-img{
+    width: 100%;
+    border-radius: 32px;
+}
+.content{
+    position: absolute;
+    color: white;
+    bottom: 100px;
+    padding: 0  60px;
+}
+.btn{
+    background-color: #fff;
+    padding: 16px 32px;
+    font-size: 16px;
+    border:none;
+    border-radius:60px;
+}
+
+
+
+.profile{
+    width: 600px;
+    margin: 0 auto;
+    position:relative;
+}   
+.cover{
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+}
+.user{
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%;
+    position: absolute;
+    left: 60px;
+    bottom: -60px;
+    border: 3px solid white;
+}
