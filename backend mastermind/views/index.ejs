@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body>
+
+<section class="max-w-2xl mx-auto mt-12">
+    <h1 class="text-xl font-semibold">Organize your tasks here!</h1>
+    <p>This is a simple backend to organize the day to day tasks!</p>
+    <form action="/add" method="post" class="flex gap-4 mt-5">
+        <input name="title" type="text" class="border border-neutral-300 p-3 focus:outline-none focus:border-violet-500" placeholder="Enter your Task">
+        <button class="py-3 px-7 bg-black text-white hover:cursor-pointer">Create Task</button>
+    </form>
+
+    <div class="mt-10">
+        <% for(let i=0; i< todos.length; i++){ %>
+            <div class="p-3 border border-neutral-200 mb-3"><%= todos[i]  %></div>
+        <%}%>
+    </div>
+</section>
+
+
+
+
+</body>
+</html>
